@@ -1,0 +1,164 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.areekkadan.myapplication.frag_bookService">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand Name :"
+            android:textSize="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txt_name"/>
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/sp_brandname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#11000000"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:ems="10"
+            android:textSize="16dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/txt_name" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fuel Type :"
+            android:textSize="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txt_fuel"
+            android:layout_below="@+id/sp_brandname"/>
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/sp_fueltype"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#11000000"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:ems="10"
+            android:textSize="16dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/txt_fuel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year Of Manufactor :"
+            android:textSize="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txt_manufactor"
+            android:layout_below="@+id/sp_fueltype"/>
+        <EditText
+            android:id="@+id/edt_manufactoryear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#11000000"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="16dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/txt_manufactor" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type Of Service:"
+            android:textSize="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txt_type"
+            android:layout_below="@+id/edt_manufactoryear"/>
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_type"
+            android:layout_margin="5dp"
+            android:id="@+id/sp_typeofservice">
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Type:"
+            android:textSize="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txt_vehicletype"
+            android:layout_below="@+id/sp_typeofservice"/>
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_vehicletype"
+            android:layout_margin="5dp"
+            android:id="@+id/sp_vehicletype">
+        </android.support.v7.widget.AppCompatSpinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additional Information:"
+            android:textSize="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txt_adinfromation"
+            android:layout_below="@+id/sp_vehicletype"/>
+        <EditText
+            android:id="@+id/edt_adinformation"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#11000000"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="16dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/txt_adinfromation" />
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="10dp"
+            android:id="@+id/crd_submit"
+            android:layout_marginBottom="31dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/edt_adinformation">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Submit"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_nearbyServices"
+            android:icon="@drawable/ic_room_black_24dp"
+            android:title="Nearby Services" />
+        <item
+            android:id="@+id/nav_acceptedServices"
+            android:icon="@drawable/ic_receipt_black_24dp"
+            android:title="Accepted Services" />
+        <item
+            android:id="@+id/nav_ownerServiceHistory"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="ServiceHistory" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_comment_black_24dp"
+            android:title="Feedbacks" />
+
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profileSettings"
+                    android:icon="@drawable/ic_person_black_24dp"
+                    android:title="Profile Settings" />
+                <item
+                    android:id="@+id/nav_appSettings"
+                    android:icon="@drawable/ic_settings_black_24dp"
+                    android:title="App Settings" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_privacy"
+                    android:icon="@drawable/ic_enhanced_encryption_black_24dp"
+                    android:title="Privacy" />
+                <item
+                    android:id="@+id/nav_terms"
+                    android:icon="@drawable/ic_copyright_black_24dp"
+                    android:title="Terms and Conditions" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>
+
+
+
